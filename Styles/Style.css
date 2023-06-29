@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Press+Start+2P&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Press Start 2P', cursive;
+    text-decoration: none;
+    border: none;
+    outline:none;
+    scroll-behavior: smooth;
+
+}
+:root {
+    --bg-color: #081b29;
+    --second-bg-color:#112e42;
+    --text-color:#ededed;
+    --main-color:orangered;
+}
+html {
+    font-size: 50%;
+    overflow-x: hidden;
+}
+body {
+    background-image: url(../Images/og-image.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100vh;
+    
+    color:var(--text-color)
+}
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 0.1rem 9%;
+    background-color:rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+
+}
+.logo {
+    font-size: 2.5rem;
+    color: var(--text-color);
+    font-weight: 600;
+    float: left;
+}
+.navbar a {
+    
+    color: var(--text-color);
+    font-weight: 500;
+    margin-left: 5rem;
+    transition: .3s;
+}
+
+section {
+    min-height: 100vh;
+    padding: 10rem 9% 2rem;
+    
+
+}
+.btn {
+    top: 75%;
+    position: absolute;
+    padding:3em 2em;
+    border:0.1em solid #000000;
+    margin:0 0.8em 0.8em 0;
+    border-radius:0.12em;
+    box-sizing: border-box;
+    text-decoration:none;
+   
+    font-weight:300;
+    color:#000000;
+    text-shadow: 0 0.04em 0.04em rgba(0,0,0,0.35);
+    background-color:#FFFFFF;
+    text-align:center;
+    transition: all 0.15s;
+}
+.btn:hover {
+    text-shadow: 0 0 2em rgba(255,255,255,1);
+    color:#000000;
+    border-color:#FFFFFF;
+}
+.btn-box a:focus-visible{
+    outline-offset: 1px;
+}
+
+.home {
+    display: flex;
+    align-items: center;
+    padding: 0 9%;
+}
+.home-content {
+    min-width: 60rem;
+}
+.home-content h1 {
+    font-size: 5.6rem;
+    font-weight: 700;
+    line-height: 1.3rem;
+}
+.home-content .text-animate {
+    position: relative;
+    width: 33.8rem;
+
+}
+.home-content .text-animate h3 {
+    font-size: 3.2rem;
+    font-weight: 700;
+    color: transparent;
+    margin-left: 3.5rem;
+    -webkit-text-stroke: .7px var(--main-color);
+}
+.home-content  {
+    font-size:1.6rem ;
+    margin: 2rem 0 4rem;
+}
+.homes:hover {
+    color:#DDDDDD;
+    border-color:#DDDDDD;
+}
+
+
